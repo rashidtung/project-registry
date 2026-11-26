@@ -40,6 +40,7 @@ Chats have no reliable end. Update the status location and INDEX.md:
 
 - Codex in any form (app, CLI, IDE extension, cloud) tags its work `codex`, even though it runs under a ChatGPT account. Codex writes and commits directly and never outputs a `REGISTRY UPDATE` block.
 - Claude tags `claude`. ChatGPT chat tags `chatgpt`.
+- All registry commits go to `main`. If your environment can only push to a side branch (e.g. `claude/...`), say so in your reply and give the branch name so the owner can merge it; never leave registry state on a branch silently.
 - Every update also sets the `Last updated: YYYY-MM-DD [tool]` line in the status file and the `Last updated` cell of the project's INDEX.md row, even when Status and Next action are unchanged.
 
 ## Rules
