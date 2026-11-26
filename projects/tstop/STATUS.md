@@ -12,7 +12,7 @@ Last updated: 2026-11-26 [claude]
 1. Test #101 on one pilot PC. Compare a timed sequence of desktop chat, browser chat, switching between them and time spent away from chat against the reported minutes and visits. Confirm that the separate chat plan is charged once for each active interval.
 2. Reconcile the overlapping enrollment changes in #102 and #107 before merge. Their combined local backend tests passed 36/36. Run the Firebase database-rules emulator tests before deploying #105.
 3. Complete hosted verification for #104 and a Windows build-only run for #109. Two browser-extension tests also fail on main.
-4. **In progress** — Fix the two failing browser-extension tests on main.
+4. **PR open (#111)** — Fix the two failing browser-extension tests on main: generated content.js was stale vs its template; regenerated; 341/341 pass. Merge before #101 so the fix ships in extension 0.5.5.
 5. Prepare pilot-PC test script for PR #101.
 
 ### 2026-11-26 checkpoint [claude] — Fable hardening PRs reviewed
@@ -25,7 +25,7 @@ Last updated: 2026-11-26 [claude]
 ### Next
 1. Owner merges in order: #103/#108/#110 → #102 → claude/combine-102-107 → #105 (after emulator run + live-rules diff) → #109 (after WIF condition) → #104 (after action 4) → #106 → #101 → #100.
 2. Owner steps: gcloud functions list + live rules export; functions deploy; rules deploy.
-3. Claude: fix action 4; add ManarProjects/tstop-testing access for web/Windows release.
+3. Claude: action 4 done as PR #111 (awaiting second review/merge). Next: ManarProjects/tstop-testing access for web/Windows release.
 
 ## Roles
 - Proposed 2026-11-26 (awaiting owner confirmation): Claude Code primary developer; Codex optional reviewer.
