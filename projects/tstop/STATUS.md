@@ -1,6 +1,6 @@
 # tstop — Tstop
 
-Last updated: 2026-11-26 [codex]
+Last updated: 2026-11-26 [claude]
 
 ## 2026-11-26 checkpoint [chatgpt]
 
@@ -13,6 +13,7 @@ Last updated: 2026-11-26 [codex]
 2. Reconcile the overlapping enrollment changes in #102 and #107 before merge. Their combined local backend tests passed 36/36. Run the Firebase database-rules emulator tests before deploying #105.
 3. Complete hosted verification for #104 and a Windows build-only run for #109. Two browser-extension tests also fail on main.
 4. **In progress** — Fix the two failing browser-extension tests on main.
+5. Prepare pilot-PC test script for PR #101.
 
 ### Blockers
 - Windows publication pending pilot-PC verification of #101.
