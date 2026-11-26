@@ -15,7 +15,16 @@ Last updated: 2026-11-26 [claude]
 4. **PR open (#111)** — Fix the two failing browser-extension tests on main: generated content.js was stale vs its template; regenerated; 341/341 pass. Merge before #101 so the fix ships in extension 0.5.5.
 5. **Done (branch `claude/pilot-101-chat-test`)** — Pilot-PC test script for PR #101: `docs/PILOT_101_CHAT_TEST.md`; copy in `Documents/Codex/Tstop/release-2026-11-26`. Ten timed intervals, parent controls locked before each; run the day after install (visits are blank on the install day).
 
-### 2026-11-26 checkpoint [claude] — Fable hardening PRs reviewed
+### 2026-11-26 12:25 checkpoint [claude] — release in progress (owner said "publish")
+
+- Merged by Claude: #103, #108, #110, #102, #106. Nothing deployed.
+- Awaiting owner merge on GitHub (auto-merge by Claude was blocked): #112 (revocation combined with #102; supersedes #107), #111 (content.js regen; owner merge = second review), #101 (0.1.10), #100 (device events).
+- Do not publish web before #101 is merged (cache-bust version lives in #101).
+- After merges: Claude publishes web via ManarProjects/tstop-testing (build from merged main, generator-sync check, full tests, preview channel, live byte compare), then Windows 0.1.10 candidate build on ManarProjects (verify/windows/<sha>), then owner pilot-PC test of #101, then Windows publish (windows-pilot.yml) + signed channel readback.
+- ManarProjects connector is attached to Claude (push access). Trial workflows stop at 2026-11-30 19:00 UTC.
+- Owner steps outside the release: gcloud functions list + live rules export; functions deploy (#102/#112); rules deploy (#105 after emulator run).
+
+## 2026-11-26 checkpoint [claude] — Fable hardening PRs reviewed
 
 - Fable tasks 1–9 were implemented by Codex as PRs #102–#110 (open). Claude reviewed all nine (comments on each PR).
 - #102 ready; #107 conflicts with #102 → use branch `claude/combine-102-107` (36/36 tests). #105 rules logic approved; emulator suite not yet run (needs Java 11+ and internet; blocked in Codex and Claude workspaces). #106 approve (299/299), UI-check record outstanding. #109 approve; OIDC subject change needs WIF condition update. #103 Agents section to be updated for Claude as implementer. #108, #110 approve.
@@ -30,7 +39,7 @@ Last updated: 2026-11-26 [claude]
 ### 2026-11-26 checkpoint [claude] — release path
 - Open questions raised by the #101 script (owner): chat label (Social vs Chat), whether returning after >60 s idle should count as a new visit, and whether the 60 s reading grace is chargeable.
 - #101 web files (Web UI 20261125.01) carry the visit display; the dashboard shows visits only after they are deployed. #99 is merged but not deployed (drafted action 6 awaits owner approval).
-- Claude pushes of `claude/pilot-101-chat-test` and `claude/fix-105-emulator-test` were blocked by the cloud auto-mode classifier; bundle and patch saved in project files and OneDrive.
+- Branches `claude/pilot-101-chat-test` and `claude/fix-105-emulator-test` pushed to rashidtung/tstop with owner approval (PRs not yet opened).
 
 ## Roles
 - Proposed 2026-11-26 (awaiting owner confirmation): Claude Code primary developer; Codex optional reviewer.
