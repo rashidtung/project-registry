@@ -36,6 +36,12 @@ Chats have no reliable end. Update the status location and INDEX.md:
 2. Update the project's row in INDEX.md: Status, Next action, Last updated.
 3. Commit and push. Message format: `<project-id>: <summary> [<tool>] YYYY-MM-DD`, where `<tool>` is `codex`, `chatgpt` or `claude`.
 
+## Tool identification
+
+- Codex in any form (app, CLI, IDE extension, cloud) tags its work `codex`, even though it runs under a ChatGPT account. Codex writes and commits directly and never outputs a `REGISTRY UPDATE` block.
+- Claude tags `claude`. ChatGPT chat tags `chatgpt`.
+- Every update also sets the `Last updated: YYYY-MM-DD [tool]` line in the status file and the `Last updated` cell of the project's INDEX.md row, even when Status and Next action are unchanged.
+
 ## Rules
 
 - Project IDs are short lowercase slugs and never change once assigned. Category (Office/Personal) and Type may change; move the row, keep the ID.
