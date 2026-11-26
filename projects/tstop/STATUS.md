@@ -15,5 +15,8 @@ Last updated: 2026-11-26 [claude]
 4. **In progress** — Fix the two failing browser-extension tests on main.
 5. Prepare pilot-PC test script for PR #101.
 
-### Blockers
+### Roles
+- 2026-11-26: Claude (Claude Code, local) is primary developer; Codex is optional second reviewer.
+
+## Blockers
 - Windows publication pending pilot-PC verification of #101.
