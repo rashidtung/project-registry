@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rashid Writing Style"
+  short_description: "Default brief email style for Rashid."
+  default_prompt: "Use this skill when writing emails, messages, notes, or management communication in Rashid Iqbal style."

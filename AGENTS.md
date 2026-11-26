@@ -52,6 +52,13 @@ Claude projects and Codex projects are shortcuts only. A project exists when it 
 - **Guard**: at session start, if the working folder is not in INDEX.md, or its row is Closed, warn the user before doing any work and offer to register or reopen it.
 - **Tidy** ("tidy my projects"): compare INDEX.md with the folders on disk and report, in one short table: rows whose folder is missing; Active rows with no update in 30 days; project-like folders not in the index; and Closed rows whose folder has not been archived. Change nothing without approval.
 
+## Shared skills
+
+- Master copies of Rashid's skills live in `skills/` in this repo (office PC: `C:\Users\rashid.iqbal\project-registry\skills`). Edit only these copies; commit every change.
+- Codex reads them from this folder. Claude keeps its own saved copy of each skill; when the user says "sync my skills", Claude compares its copies with `skills/` and proposes updates. The repo copy always wins.
+- Skills hold working method and style only: no client data, credentials or personal identifiers.
+- For any email, message, review note or management communication, use `skills/rashid-writing-style/SKILL.md`.
+
 ## Rules
 
 - Project IDs are short lowercase slugs and never change once assigned. Category (Office/Personal) and Type may change; move the row, keep the ID.

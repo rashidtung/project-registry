@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "SPL Office Work Two-Level Structure"
+  short_description: "Enforce a two-level office folder structure"
+  default_prompt: "Use $spl-office-work-flat-structure to organize SPL Office Work with categories and one work-folder layer."
+
