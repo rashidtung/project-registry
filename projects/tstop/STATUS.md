@@ -2,6 +2,12 @@
 
 Last updated: 2026-11-26 [claude]
 
+## 2026-11-26 checkpoint [claude] — UI review H3/H4/W1 fixed in PR #114
+
+- PR #114 (branch `claude/project-thread-6lm03w`): Chat & social tab in Apps & websites; Time limits lists what counts toward each plan; one category vocabulary (Games, Streaming, Chat & social) across Apps, Usage, native popup and new-family defaults; parent mode text fixed. Tests 347/347; WebReviewBrowser 73/73 in Chromium. C# build and native UI tests not run (needs ManarProjects Windows run). Not deployed.
+- W1 finding: unlocking settings does **not** pause counting; only parent mode does (FamilyTime.cs:354). The #101 pilot script was wrong on this; corrected copy in PR #114 (`docs/PILOT_101_CHAT_TEST.md`) and project files `tstop-release/PILOT_101_CHAT_TEST.md`. OneDrive release copy not updated (folder not granted to this session).
+- Owner: merge #114; rename the live "Chatting Apps" plan to "Chat & social" (existing family names are not changed by code); confirm label choice (answers open action 5, chat label).
+
 ## 2026-11-26 14:35 PKT checkpoint [claude] — merged, web published, Windows 0.1.10 candidate verified
 
 ### Current state
