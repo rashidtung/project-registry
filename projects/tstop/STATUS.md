@@ -16,7 +16,7 @@ Last updated: 2026-11-26 [claude]
 5. Prepare pilot-PC test script for PR #101.
 
 ### Roles
-- 2026-11-26: Claude (Claude Code, local) is primary developer; Codex is optional second reviewer.
+- Proposed 2026-11-26 (awaiting owner confirmation): Claude Code primary developer; Codex optional reviewer.
 
 ## Blockers
 - Windows publication pending pilot-PC verification of #101.
