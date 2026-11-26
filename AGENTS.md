@@ -9,6 +9,14 @@ This repository is the single master index of Rashid's projects. It applies equa
   - Office PC: `D:\OneDrive`
   - Mac: `~/OneDrive` (Finder shows it as `OneDrive`)
 - iCloud Drive is not a project location.
+- Registry clone on the Mac: `~/dev/project-registry`. When an instruction names a Windows path (`C:\Users\rashid.iqbal\...`, `D:\OneDrive\...`), use the equivalent location on the Mac.
+
+## Both machines, always
+
+Rashid works on every project from either his Mac or his office PC. Anything you create or change must be reachable from both:
+- Project files go in OneDrive; registry, skills and code go in GitHub and are pushed before the session ends. Unpushed commits or files saved only on one machine (local Documents, Desktop, temp folders, `~/.codex`, `~/.claude`) count as not saved.
+- Code work on a branch is pushed at every checkpoint, even if unfinished.
+- If something can only be set up per machine (app settings, global instruction files, scheduled tasks), keep its master copy in this repo under `docs/` and tell Rashid it must also be applied on the other machine.
 
 ## Where project status lives
 
