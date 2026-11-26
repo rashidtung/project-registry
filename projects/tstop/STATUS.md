@@ -12,6 +12,7 @@ Last updated: 2026-11-26 [chatgpt]
 1. Test #101 on one pilot PC. Compare a timed sequence of desktop chat, browser chat, switching between them and time spent away from chat against the reported minutes and visits. Confirm that the separate chat plan is charged once for each active interval.
 2. Reconcile the overlapping enrollment changes in #102 and #107 before merge. Their combined local backend tests passed 36/36. Run the Firebase database-rules emulator tests before deploying #105.
 3. Complete hosted verification for #104 and a Windows build-only run for #109. Two browser-extension tests also fail on main.
+4. Fix the two failing browser-extension tests on main.
 
 ### Blockers
 - Windows publication pending pilot-PC verification of #101.
