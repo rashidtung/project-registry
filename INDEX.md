@@ -10,7 +10,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 | cci-fsd-2-4mw | Coca-Cola Faisalabad 2.4 MW | EPC | Active | Review 15–20 Oct office-PC sections recovered into CURRENT_HANDOVER.md and PROJECT_MEMORY.md; re-file into date order. | `SPL Office Work/Coca Cola Fsd 2.4MW` | OneDrive pack (PROJECT_MEMORY, CURRENT_HANDOVER); conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
 | bsp-4-8mw | Bulleh Shah 4.8 MW | EPC | Active | TBD | `SPL Office Work/BSP - Bulleh Shah` | repo | 2026-11-26 |
 | spl-eng-audit | SPL Engineering Audit | Internal | Active | TBD | `SPL Office Work/SPL Engineering Audit` | OneDrive pack (AGENTS, START HERE) | 2026-11-26 |
-| email-for-llm | EMAIL for LLM | Internal | Active | TBD | `SPL Office Work/EMAIL for LLM` | OneDrive pack (AGENTS) | 2026-11-26 |
+| email-for-llm | EMAIL for LLM | Internal | Active | Confirm new budget period; review prior engineering workbook and current assumptions. | `SPL Office Work/EMAIL for LLM` | OneDrive pack (AGENTS, PROJECT_STATUS) | 2026-11-26 [codex] |
 | bess | BESS — evaluations and proposals | EPC | Active | TBD | `SPL Office Work/BESS` | repo | 2026-11-26 |
 | pitco | PITCO consultancy portfolio (Danddot Cement, FE Hydrogen, Geothermal, Green Ammonia, HNML, QPQ, Telco Towers) | Consulting | Active | TBD | `SPL Office Work/PITCO` | repo | 2026-11-26 |
 | procurement | Procurement and Commercial | Internal | Active | TBD | `SPL Office Work/Procurement and Commercial` | repo | 2026-11-26 |
