@@ -43,6 +43,15 @@ Chats have no reliable end. Update the status location and INDEX.md:
 - All registry commits go to `main`. If your environment can only push to a side branch (e.g. `claude/...`), say so in your reply and give the branch name so the owner can merge it; never leave registry state on a branch silently.
 - Every update also sets the `Last updated: YYYY-MM-DD [tool]` line in the status file and the `Last updated` cell of the project's INDEX.md row, even when Status and Next action are unchanged.
 
+## Project lifecycle (the registry decides; app sidebars follow)
+
+Claude projects and Codex projects are shortcuts only. A project exists when it has a row in INDEX.md, and it is closed when that row says Closed. Never treat an app's project list as authoritative.
+
+- **Register** ("register project X at <folder>"): confirm the folder exists; assign a permanent ID; add the INDEX.md row under Office or Personal; create `projects/<id>/` from `_template` unless the folder already has a context pack; commit. Then tell the user the shortcuts to create: a Claude project named `<id>` from the folder, and a Codex project for the same folder.
+- **Close** ("close project X"): set Status to Closed with today's date and a one-line closing note in the status location; commit. Ask before moving the folder to `SPL Office Work/99 Archive` (Office) or an archive folder chosen by the user (Personal); never delete. Then tell the user which Claude and Codex entries to remove.
+- **Guard**: at session start, if the working folder is not in INDEX.md, or its row is Closed, warn the user before doing any work and offer to register or reopen it.
+- **Tidy** ("tidy my projects"): compare INDEX.md with the folders on disk and report, in one short table: rows whose folder is missing; Active rows with no update in 30 days; project-like folders not in the index; and Closed rows whose folder has not been archived. Change nothing without approval.
+
 ## Rules
 
 - Project IDs are short lowercase slugs and never change once assigned. Category (Office/Personal) and Type may change; move the row, keep the ID.
