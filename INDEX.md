@@ -6,8 +6,8 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 
 | ID | Project | Type | Status | Next action | Files location | Context | Last updated |
 |---|---|---|---|---|---|---|---|
-| pitco-parco-shams-1 | PITCO/PARCO — Project Shams Phase I | Consulting | Active | TBD | `SPL Office Work/PITCO PARCO` | OneDrive pack (PROJECT_CONTEXT, DECISION_REGISTER, DOCUMENT_REGISTER, OPEN_ACTIONS) | 2026-11-26 |
-| cci-fsd-2-4mw | Coca-Cola Faisalabad 2.4 MW | EPC | Active | TBD | `SPL Office Work/Coca Cola Fsd 2.4MW` | OneDrive pack (PROJECT_MEMORY, CURRENT_HANDOVER) | 2026-11-26 |
+| pitco-parco-shams-1 | PITCO/PARCO — Project Shams Phase I | Consulting | Active | TBD | `SPL Office Work/PITCO PARCO` | OneDrive pack (PROJECT_CONTEXT, DECISION_REGISTER, DOCUMENT_REGISTER, OPEN_ACTIONS); conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
+| cci-fsd-2-4mw | Coca-Cola Faisalabad 2.4 MW | EPC | Active | Review 15–20 Oct office-PC sections recovered into CURRENT_HANDOVER.md and PROJECT_MEMORY.md; re-file into date order. | `SPL Office Work/Coca Cola Fsd 2.4MW` | OneDrive pack (PROJECT_MEMORY, CURRENT_HANDOVER); conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
 | bsp-4-8mw | Bulleh Shah 4.8 MW | EPC | Active | TBD | `SPL Office Work/BSP - Bulleh Shah` | repo | 2026-11-26 |
 | spl-eng-audit | SPL Engineering Audit | Internal | Active | TBD | `SPL Office Work/SPL Engineering Audit` | OneDrive pack (AGENTS, START HERE) | 2026-11-26 |
 | email-for-llm | EMAIL for LLM | Internal | Active | TBD | `SPL Office Work/EMAIL for LLM` | OneDrive pack (AGENTS) | 2026-11-26 |
@@ -37,7 +37,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 | tstop | Tstop | Software | Active | Verify PR #101 chat minutes and visit counts on a pilot Windows PC before publication. | `Documents/Codex/Tstop; GitHub` | repo | 2026-11-26 [claude] |
 | tung-taleem-portal | Tung Taleem Portal | Software | Active | TBD | `Tung Taleem Portal` | OneDrive pack (AGENTS, README) | 2026-11-26 |
 | tung-time | Tung Time | Software | Active | TBD | `Tung Time Final Package` | repo | 2026-11-26 |
-| manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile | 2026-11-26 |
+| manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile; conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
 | canada-immigration | Canada Family Immigration | Personal | Active | TBD | `Documents/Canada Family Immigration` | OneDrive pack (AGENTS) | 2026-11-26 |
 | stock-investments | Stock Investments | Personal | Active | TBD | `Documents/Stock Investments` | repo | 2026-11-26 |
 | ai-master-class | AI Master Class (folder empty) | Personal | Review | TBD | `SPL Office Work/AI Master Class` | repo | 2026-11-26 |
