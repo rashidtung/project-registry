@@ -8,4 +8,6 @@
 
 Trigger word for all tools: **checkpoint**.
 
+**Mac setup is pending: see [MAC_SETUP.md](MAC_SETUP.md).**
+
 Repeat the Codex step on every computer (office PC and Mac). Claude and ChatGPT settings are account-level and only need setting once.
