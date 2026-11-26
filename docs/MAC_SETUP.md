@@ -1,4 +1,4 @@
-# Mac setup — PENDING (prepared 2026-11-26)
+# Mac setup — DONE 2026-11-26 (Rashids-MacBook-Pro)
 
 Run once in Terminal on the Mac:
 
@@ -9,6 +9,7 @@ sed 's#C:\\Users\\rashid\.iqbal\\project-registry#~/dev/project-registry#g' ~/de
 sed 's#C:\\Users\\rashid\.iqbal\\project-registry#~/dev/project-registry#g' ~/dev/project-registry/docs/claude-global-CLAUDE.md >> ~/.claude/CLAUDE.md
 (crontab -l 2>/dev/null | grep -v project-registry; echo '0 * * * * cd $HOME/dev/project-registry && /usr/bin/git pull --rebase --autostash -q && /usr/bin/git push -q') | crontab -
 cd ~/dev/project-registry && git push
+sed -i '' 's#project-registry\\\\skills#project-registry/skills#g' ~/.codex/AGENTS.md ~/.claude/CLAUDE.md
 ```
 
 Check: `ls ~/dev/project-registry; tail -4 ~/.codex/AGENTS.md; crontab -l`
