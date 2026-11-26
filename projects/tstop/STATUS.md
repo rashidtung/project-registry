@@ -2,6 +2,21 @@
 
 Last updated: 2026-11-26 [claude]
 
+## 2026-11-26 14:35 PKT checkpoint [claude] — merged, web published, Windows 0.1.10 candidate verified
+
+### Current state
+- rashidtung/tstop main = 0243d62 (owner-approved merges by Claude: #111, #113 into #105's branch, #104, #112, #101, #100; #107 closed as superseded by #112). Tests on main: backend 36/36, dashboard/tooling 342/342.
+- Web published from 0243d62 (owner approved) via ManarProjects/tstop-testing `temporary-hosting-access.yml` (the only workflow the WIF condition admits). Preview run 45792231443 matched byte for byte; live diff limited to #99, #101, #106. Publish run 45792596594 read back app.js, settings.mjs, firebase-config.js, dashboard, activity-history on soojha.com, tstop.web.app and tung-time-parent-control-34544.web.app. Live label: Web UI 20261125.01 / 0.1.10. #99 Today report is now also on the parent dashboard site (was missing there).
+- Windows 0.1.10 candidate from 0243d62 verified: ManarProjects run 45782329074 (build, SYSTEM recovery, fresh install, full verify, browser packages, full upgrade all passed). Artifacts: installers 15099665397, browser packages 15098534566. Verification branch verify/windows/0243d62… (enterprise commit 537e862, identical tree 0e06f47).
+- Not published: Windows 0.1.10 pilot channel, extension 0.5.5 store submissions. Not deployed: functions (#102/#112 revocation), database rules (#105, still open; emulator test passes).
+
+### Open actions
+1. Owner: pilot-PC test of 0.1.10 + extension 0.5.5 per docs/PILOT_101_CHAT_TEST.md (run the day after install). Installer: run 45782329074 artifact tstop-windows-candidate.
+2. After a passing pilot: publish Windows 0.1.10 via windows-pilot.yml (needs setup/update SHA-256 from the artifact) and submit extension 0.5.5 to Chrome/Edge stores. ManarProjects trial ends 2026-11-30 19:00 UTC.
+3. Owner: export live database rules for the #105 diff; then merge/deploy #105. Deploy functions for #112.
+4. #109: WIF condition update, then Windows build-only run.
+5. Owner decisions from the pilot script: chat label, visit definition after >60 s idle, chargeable reading grace.
+
 ## 2026-11-26 checkpoint [chatgpt]
 
 ### Current state
