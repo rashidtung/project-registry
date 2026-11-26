@@ -23,6 +23,13 @@ Each project has exactly one status location, given in the `Context` column of I
 2. Read INDEX.md to identify the project and its ID.
 3. Read the project's status location (above). Do not rely on your own memory for project state.
 
+## When to update (write-through)
+
+Chats have no reliable end. Update the status location and INDEX.md:
+- after every material decision, document revision or change in action status;
+- immediately when the user says **checkpoint**;
+- before giving a final answer that closes a piece of work.
+
 ## Session end
 
 1. Update the project's status location: current state, open actions, blockers. Record confirmed decisions with date (`DECISIONS.md` in the repo, or the pack's DECISION_REGISTER.md).
@@ -42,3 +49,7 @@ Each project has exactly one status location, given in the `Context` column of I
 - Category: Office, Personal
 - Type: EPC, O&M, Consulting, Internal, Software, Personal
 - Status: Active, On hold, Review, Closed
+
+## Tools that cannot write to this repo (e.g. ChatGPT)
+
+On "checkpoint", output one fenced block titled `REGISTRY UPDATE` containing: project ID, date, tool, the new INDEX.md row values (Status, Next action), and the exact text to add to the status location (current state, open actions, decisions). The user will paste it into Codex or Claude, which applies it and commits.
