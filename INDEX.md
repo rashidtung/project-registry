@@ -34,7 +34,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 
 | ID | Project | Type | Status | Next action | Files location | Context | Last updated |
 |---|---|---|---|---|---|---|---|
-| tstop | Tstop | Software | Active | Verify PR #101 chat minutes and visit counts on a pilot Windows PC before publication. | `Documents/Codex/Tstop; GitHub` | repo | 2026-11-26 [chatgpt] |
+| tstop | Tstop | Software | Active | Verify PR #101 chat minutes and visit counts on a pilot Windows PC before publication. | `Documents/Codex/Tstop; GitHub` | repo | 2026-11-26 [codex] |
 | tung-taleem-portal | Tung Taleem Portal | Software | Active | TBD | `Tung Taleem Portal` | OneDrive pack (AGENTS, README) | 2026-11-26 |
 | tung-time | Tung Time | Software | Active | TBD | `Tung Time Final Package` | repo | 2026-11-26 |
 | manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile | 2026-11-26 |
