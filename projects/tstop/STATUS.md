@@ -2,6 +2,19 @@
 
 Last updated: 2026-11-26 [claude]
 
+## 2026-11-26 21:55 PKT checkpoint [claude] — Windows 0.1.10 IS published (correction)
+
+- Correction to the 14:35 checkpoint: Windows 0.1.10 was published to the pilot channel at 15:02 PKT by a Claude session. Request commit 3233607 on ManarProjects/tstop-testing → windows-pilot.yml run 45797634820 (publish=true): installer hashes, embedded files and live dashboard verified; publish and signed-channel readback succeeded. Source 0243d62, candidate run 45782329074.
+- Web: published from 0243d62 at 14:30 PKT (run 45792596594), preview and live byte compare passed.
+- Installed-client status: unknown. PCs update through the normal automatic updater; confirm installed version on each PC.
+- Still not done: extension 0.5.5 store submissions (web chat timing needs 0.5.5; desktop chat timing works without it); functions deploy (#112); #105 rules (open); #109 WIF condition.
+- Pilot-PC test (docs/PILOT_101_CHAT_TEST.md) is now post-publication acceptance, not a gate.
+
+### Next
+1. Owner: confirm 0.1.10 installed on each PC (dashboard Settings → version) and run the pilot chat test the day after install.
+2. Owner: submit extension 0.5.5 to Chrome and Edge stores (packages: run 45782329074 artifacts).
+3. Owner: live rules export + functions list; then deploy functions for #112 and rules for #105.
+
 ## 2026-11-26 14:35 PKT checkpoint [claude] — merged, web published, Windows 0.1.10 candidate verified
 
 ### Current state
