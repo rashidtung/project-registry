@@ -2,6 +2,16 @@
 
 Last updated: 2026-11-27 [claude]
 
+## 2026-11-27 16:05 PKT checkpoint [claude] — 0.1.12 released: week bar shows minutes played
+
+- Owner asked to see when entertainment allowance was used each day ("This is perfect, publish immediately" on the per-minute mock). Built: the Windows service records each local minute in which shared entertainment time is charged ([start,end) runs per date, 9 days, max 240 runs/day). Status carries Played, UsedSeconds and LimitMinutes per week day. The week bar draws played minutes in orange inside the green window, greys elapsed time, and shows "used of limit" and the allowance left today. History starts from the 0.1.12 install; earlier days show no marks.
+- PR #117 merged (68a7d5f; source a45be31, same tree). Node tests 347/347; browser suites pass; Windows run 45985836506 passed (Entertainment timing 74 checks, EntertainmentUiTests played-minutes check).
+- Web published from a45be31 (run 45986703174, live byte checks passed). Windows 0.1.12-85e7085a9bfb, build 2026112702, uiRevision 20261127.02 published to clean-pilot (request run 45986913579, pilot run 45986933189).
+
+### Next
+1. Owner: confirm each pilot PC shows 0.1.12; check orange marks appear after play.
+2. ManarProjects trial ends 2026-11-30 19:00 UTC.
+
 ## 2026-11-27 15:10 PKT checkpoint [claude] — 0.1.11 released: compact wide dashboard + week timeline grid + auto dark theme
 
 - Design (owner choices): compact top row as three cards (time, parent controls, computer); full-week timeline grid (one row per day on a 24-hour scale, today highlighted with now line and time left, past days muted); same wide frame (canvas, up to 1480px, white panels) on Apps & websites, Time limits, Usage and Settings at 1150px and wider; dark green theme that follows the Windows/browser light-dark setting (light look unchanged). Options page: https://claude.ai/artifact/UmFASKMuNoJ7SeVfpVQRjU. Screenshots, Node port of Build-SharedEditor.ps1: project files `dashboard-compact-2026-11-27/`.
