@@ -34,11 +34,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 
 | ID | Project | Type | Status | Next action | Files location | Context | Last updated |
 |---|---|---|---|---|---|---|---|
-<<<<<<< HEAD
-| tstop | Tstop | Software | Active | #114 chat UI fixes merged, not deployed; owner: rename live chat plan; pilot-PC test of Windows 0.1.10 + extension 0.5.5 (docs/PILOT_101_CHAT_TEST.md, use corrected copy); then Claude publishes Windows pilot and store packages. Web 0.1.10 live. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-26 [claude] |
-=======
-| tstop | Tstop | Software | Active | Web + Windows 0.1.10 published 2026-11-26. Owner: confirm install on PCs, pilot chat test, submit extension 0.5.5, backend deploys. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-26 [claude] |
->>>>>>> origin/main
+| tstop | Tstop | Software | Active | Windows 0.1.11 (build 2026112701) + web UI 20261127.01 published 27 Nov: compact wide dashboard, week timeline grid, auto dark theme. Owner: confirm 0.1.11 on each PC; next: mock used-time fill in week bar; ManarProjects trial ends 30 Nov. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-27 [claude] |
 | tung-taleem-portal | Tung Taleem Portal | Software | Active | TBD | `Tung Taleem Portal` | OneDrive pack (AGENTS, README) | 2026-11-26 |
 | tung-time | Tung Time | Software | Active | TBD | `Tung Time Final Package` | repo | 2026-11-26 |
 | manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile; conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |

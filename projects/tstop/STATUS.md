@@ -1,15 +1,27 @@
 # tstop — Tstop
 
-Last updated: 2026-11-26 [claude]
+Last updated: 2026-11-27 [claude]
 
-<<<<<<< HEAD
+## 2026-11-27 15:10 PKT checkpoint [claude] — 0.1.11 released: compact wide dashboard + week timeline grid + auto dark theme
+
+- Design (owner choices): compact top row as three cards (time, parent controls, computer); full-week timeline grid (one row per day on a 24-hour scale, today highlighted with now line and time left, past days muted); same wide frame (canvas, up to 1480px, white panels) on Apps & websites, Time limits, Usage and Settings at 1150px and wider; dark green theme that follows the Windows/browser light-dark setting (light look unchanged). Options page: https://claude.ai/artifact/UmFASKMuNoJ7SeVfpVQRjU. Screenshots, Node port of Build-SharedEditor.ps1: project files `dashboard-compact-2026-11-27/`.
+- Code: PR #115 merged (6ce988d; includes Today-hierarchy fix, merge of #114, InstallerUpgradeTests "Games" fix, version bump to Windows 0.1.11 / web UI 20261127.01). PR #116 merged (5dc19ba): update build advanced to 2026112701. Node tests 347/347; browser suites 73/73, 113/113, 20/20.
+- Web: published from 6ce988d (ManarProjects run 45977463893): preview byte checks, then live on soojha.com, tstop.web.app and tung-time-parent-control-34544.web.app verified byte-for-byte. Web files identical in 5dc19ba.
+- Windows: first 0.1.11 publish (run 45978150922, releaseId 0.1.11-250550602b0f) carried build 2026112502, equal to 0.1.10, so 0.1.10 PCs would not auto-update. Fixed in #116; candidate run 45978502027 passed (service, dashboard, extension, installer, fresh install, upgrade); republished as 0.1.11-bf014bc6f3f3, build 2026112701, uiRevision 20261127.01 (request run 45979397789, pilot run 45979414840, publish=true, success). Current clean-pilot manifest is the corrected release.
+- Lesson: a Windows release bump must also advance `InstalledBuild` in CloudUpdates.cs.
+- Owner chose next design step (10:08 UTC): week bar shows entertainment time used as a darker fill sized to minutes used against the daily limit (option A, mock first). Past-day limits are not in the dashboard model today (EntertainmentWindowSummary drops SharedMinutes), so past days need either a small Windows model change or limits from the web rule document.
+
+### Next
+1. Owner: confirm each pilot PC shows 0.1.11 (Settings → version) after the automatic update; check the new dashboard on web and Windows, light and dark.
+2. Claude: mock option A (used-time fill in the week bar) for owner review.
+3. ManarProjects trial ends 2026-11-30 19:00 UTC; plan any further Windows release before then.
+
 ## 2026-11-26 checkpoint [claude] — UI review H3/H4/W1 fixed in PR #114
 
 - PR #114 (branch `claude/project-thread-6lm03w`): Chat & social tab in Apps & websites; Time limits lists what counts toward each plan; one category vocabulary (Games, Streaming, Chat & social) across Apps, Usage, native popup and new-family defaults; parent mode text fixed. Tests 347/347; WebReviewBrowser 73/73 in Chromium. C# build and native UI tests not run (needs ManarProjects Windows run). Not deployed.
 - W1 finding: unlocking settings does **not** pause counting; only parent mode does (FamilyTime.cs:354). The #101 pilot script was wrong on this; corrected copy in PR #114 (`docs/PILOT_101_CHAT_TEST.md`) and project files `tstop-release/PILOT_101_CHAT_TEST.md`. OneDrive release copy not updated (folder not granted to this session).
 - 2026-11-26 21:52 PKT: #114 merged by owner (main now includes it). Not deployed: web publish and a Windows candidate build are needed before the family sees it.
 - Owner: rename the live "Chatting Apps" plan to "Chat & social" (existing family names are not changed by code); confirm label choice (answers open action 5, chat label).
-=======
 ## 2026-11-26 21:55 PKT checkpoint [claude] — Windows 0.1.10 IS published (correction)
 
 - Correction to the 14:35 checkpoint: Windows 0.1.10 was published to the pilot channel at 15:02 PKT by a Claude session. Request commit 3233607 on ManarProjects/tstop-testing → windows-pilot.yml run 45797634820 (publish=true): installer hashes, embedded files and live dashboard verified; publish and signed-channel readback succeeded. Source 0243d62, candidate run 45782329074.
@@ -22,7 +34,6 @@ Last updated: 2026-11-26 [claude]
 1. Owner: confirm 0.1.10 installed on each PC (dashboard Settings → version) and run the pilot chat test the day after install.
 2. Owner: submit extension 0.5.5 to Chrome and Edge stores (packages: run 45782329074 artifacts).
 3. Owner: live rules export + functions list; then deploy functions for #112 and rules for #105.
->>>>>>> origin/main
 
 ## 2026-11-26 14:35 PKT checkpoint [claude] — merged, web published, Windows 0.1.10 candidate verified
 
