@@ -1,6 +1,23 @@
 # tstop — Tstop
 
-Last updated: 2026-11-27 [claude]
+Last updated: 2026-11-27 21:50 PKT [claude]
+
+## Open actions — reconciled 2026-11-27 21:50 PKT [claude]
+
+This list replaces the "Next"/"Open actions" lists in the older checkpoints below. It folds in three threads: compact dashboard (this one), "Review soojha.com site and sign-in UX", and "Fix chat UI findings before pilot". Items carried from 26 Nov were not re-checked today unless marked.
+
+Done and shipped (for reference): #114 chat fixes (H3/H4/W1) and the soojha-thread Today fix (in #115) shipped in 0.1.11. Releases 0.1.11, 0.1.12 and 0.1.13 are live on web and the Windows pilot channel.
+
+1. **Owner: merge registry PR #8.** It already clears the conflict markers left on main by #5, so registry PR #6 is superseded and closed.
+2. **Owner: approve 0.1.14 mocks** (project files `dashboard-compact-2026-11-27/mock-style-*.png`). Covers: children (Muid, Bazil) can open the day breakdown; quieter week limit text ("1h 35m / 2h", orange dot = limit reached); Today style (hover outline, greyed past/secondary) and compact spacing on Apps & websites, Time limits and Settings. Today part built, uncommitted, on branch claude/project-thread-rha74z; other tabs mocked only. Release 0.1.14 must finish before the ManarProjects trial ends.
+3. **Owner: confirm 0.1.13 on each pilot PC** (Settings → version) and that orange used-minute marks appear after play.
+4. **Owner: rename the live "Chatting Apps" plan to "Chat & social"** in Time limits (code does not rename existing plans; from #114).
+5. **Owner: run the pilot chat test** (docs/PILOT_101_CHAT_TEST.md; corrected copy in project files tstop-release/) the day after install, then decide: visit counted again after >60 s idle? 60 s reading grace chargeable?
+6. **soojha.com / sign-in findings (not started):** (a) no privacy, terms or contact pages; (b) three hosts (soojha.com, tstop.web.app, tung-time-parent-control-34544.web.app) each with their own sign-in; (c) conflicting offline numbers on Today; (d) slimmer web header and one consistent page shell (web only). Item (d) partly covered by 0.1.11 and the 0.1.14 work.
+7. **Extension 0.5.5 store submissions** (Chrome, Edge) — needed for web chat timing. Status not re-checked since 26 Nov.
+8. **Backend deploys:** functions for #112 (revocation), and #105 rules after the owner's live-rules export and diff (#105 still open). #109 open: needs the WIF condition update.
+9. **ManarProjects/tstop-testing trial ends 2026-11-30 19:00 UTC.** After that, web and Windows releases need GitHub Actions on rashidtung/tstop, which has refused jobs (billing/spending limit) since 23 Nov. Owner: fix billing or arrange another runner.
+10. Older open tstop PRs not reviewed in this pass: #41, #56, #60, #79, #82, #88, #89, #90.
 
 ## 2026-11-27 16:40 PKT checkpoint [claude] — Usage merged into a compact Today; web and Windows 0.1.13 released
 
