@@ -1,6 +1,12 @@
 # tstop — Tstop
 
-Last updated: 2026-11-27 21:50 PKT [claude]
+Last updated: 2026-11-27 22:30 PKT [claude]
+
+## 2026-11-27 22:30 PKT checkpoint [claude] — 0.1.14 released: Today style on every tab
+
+- Owner approved the mocks ("lets begin"). Children (Muid, Bazil) can open today/past days in the week grid for their minutes; used time reads "1h 35m / 2h" with an orange dot when the limit was reached. Apps & websites, Time limits and Settings use the compact Today style on wide screens (Save in the title bar, hover outline, today's schedule row outlined, past days greyed in "Adjust this week", Settings as one card).
+- PR #120 merged (a2637bd; source 834b5d2). Node 347/347; browser suites 73/113/20. First Windows run failed on a test expecting the old "30m of 2h" text; test updated; run 46036779440 passed.
+- Web UI 20261127.05 live (run 46037474476, 17 live checks). Windows 0.1.14-4406cfea0a82, build 2026112704, published to pilot (request run 46037689427, pilot run 46037704167).
 
 ## Open actions — reconciled 2026-11-27 21:50 PKT [claude]
 
@@ -9,8 +15,8 @@ This list replaces the "Next"/"Open actions" lists in the older checkpoints belo
 Done and shipped (for reference): #114 chat fixes (H3/H4/W1) and the soojha-thread Today fix (in #115) shipped in 0.1.11. Releases 0.1.11, 0.1.12 and 0.1.13 are live on web and the Windows pilot channel.
 
 1. **Owner: merge registry PR #8.** It already clears the conflict markers left on main by #5, so registry PR #6 is superseded and closed.
-2. **Owner: approve 0.1.14 mocks** (project files `dashboard-compact-2026-11-27/mock-style-*.png`). Covers: children (Muid, Bazil) can open the day breakdown; quieter week limit text ("1h 35m / 2h", orange dot = limit reached); Today style (hover outline, greyed past/secondary) and compact spacing on Apps & websites, Time limits and Settings. Today part built, uncommitted, on branch claude/project-thread-rha74z; other tabs mocked only. Release 0.1.14 must finish before the ManarProjects trial ends.
-3. **Owner: confirm 0.1.13 on each pilot PC** (Settings → version) and that orange used-minute marks appear after play.
+2. ~~Owner: approve 0.1.14 mocks~~ Done: 0.1.14 released 27 Nov 22:30 PKT (see checkpoint above).
+3. **Owner: confirm 0.1.14 on each pilot PC** (Settings → version) and that orange used-minute marks appear after play.
 4. **Owner: rename the live "Chatting Apps" plan to "Chat & social"** in Time limits (code does not rename existing plans; from #114).
 5. **Owner: run the pilot chat test** (docs/PILOT_101_CHAT_TEST.md; corrected copy in project files tstop-release/) the day after install, then decide: visit counted again after >60 s idle? 60 s reading grace chargeable?
 6. **soojha.com / sign-in findings (not started):** (a) no privacy, terms or contact pages; (b) three hosts (soojha.com, tstop.web.app, tung-time-parent-control-34544.web.app) each with their own sign-in; (c) conflicting offline numbers on Today; (d) slimmer web header and one consistent page shell (web only). Item (d) partly covered by 0.1.11 and the 0.1.14 work.
