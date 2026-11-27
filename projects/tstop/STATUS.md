@@ -2,6 +2,18 @@
 
 Last updated: 2026-11-27 [claude]
 
+## 2026-11-27 16:40 PKT checkpoint [claude] — Usage merged into a compact Today (web live; Windows 0.1.13 awaiting go)
+
+- Owner rule: every screen as compact as possible without losing readability. Today now has one slim banner row (ring, time pass actions, computer status; 66 px tall at full screen, also on the 1280 px Windows window). Tapping today or a past day in the week grid opens a one-line usage strip (activities, chat visits, computer use, top apps, link to full history). Usage tab hidden; Activity availability removed from the parent Today view. Earlier the same day (PR #118, web UI 20261127.03) the browser-connection notice moved into the Computer card, collapsed.
+- PR #119 merged (147fdc9; source 6cd70a8). Node 347/347; browser suites 73/113/20 pass. GitHub Actions on rashidtung/tstop did not start (account billing/spending limit); commented on the PR.
+- Windows candidate run 45990364471 passed (verify commit 49bb8c4, artifact 15194250039). Web UI 20261127.04 published from 6cd70a8 (run 45991169642), live verified on all three sites.
+- Windows 0.1.13 (build 2026112703, revision 20261127.04) publish request prepared (request-windows-0113.yml) but not pushed: waiting on owner go-ahead.
+
+### Next
+1. Owner: approve Windows 0.1.13 publish.
+2. Apply the compact rule to Apps & websites, Time limits and Settings.
+3. ManarProjects trial ends 2026-11-30 19:00 UTC.
+
 ## 2026-11-27 16:05 PKT checkpoint [claude] — 0.1.12 released: week bar shows minutes played
 
 - Owner asked to see when entertainment allowance was used each day ("This is perfect, publish immediately" on the per-minute mock). Built: the Windows service records each local minute in which shared entertainment time is charged ([start,end) runs per date, 9 days, max 240 runs/day). Status carries Played, UsedSeconds and LimitMinutes per week day. The week bar draws played minutes in orange inside the green window, greys elapsed time, and shows "used of limit" and the allowance left today. History starts from the 0.1.12 install; earlier days show no marks.

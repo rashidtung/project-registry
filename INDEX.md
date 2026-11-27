@@ -34,7 +34,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 
 | ID | Project | Type | Status | Next action | Files location | Context | Last updated |
 |---|---|---|---|---|---|---|---|
-| tstop | Tstop | Software | Active | Windows 0.1.12 (build 2026112702) + web UI 20261127.02 published 27 Nov: week bar shows minutes played; compact dashboard + auto dark theme (0.1.11). Owner: confirm 0.1.12 on each PC; ManarProjects trial ends 30 Nov. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-27 [claude] |
+| tstop | Tstop | Software | Active | Web UI 20261127.04 live 27 Nov: compact Today with Usage merged in (Usage tab removed). Windows 0.1.13 built and tested, awaiting owner go to publish. Owner: confirm 0.1.12/0.1.13 on each PC; ManarProjects trial ends 30 Nov. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-27 [claude] |
 | tung-taleem-portal | Tung Taleem Portal | Software | Active | TBD | `Tung Taleem Portal` | OneDrive pack (AGENTS, README) | 2026-11-26 |
 | tung-time | Tung Time | Software | Active | TBD | `Tung Time Final Package` | repo | 2026-11-26 |
 | manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile; conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
