@@ -1,15 +1,21 @@
 # tstop — Tstop
 
-Last updated: 2026-11-26 [claude]
+Last updated: 2026-11-28 [claude]
 
-<<<<<<< HEAD
+## 2026-11-28 checkpoint [claude] — Muid's YouTube rule found set to Always allowed
+
+- Firebase commands show the YouTube rule was loosened by two web-dashboard saves from the parent account (27 Nov 18:47 PKT; 28 Nov 01:11 PKT). The installer and updater changed nothing. The 01:11 save was a stale dashboard draft (18:47 state + 4 new games) that silently reverted a 19:57 restore.
+- Cause: SetRules replaces the whole config; the dashboard's staleness guard (acknowledgedRevisions) passes on A→B→A revisions; no confirmation/alert on loosening. Report: project files youtube-rule-investigation-2026-11-28/.
+- Live now: youtube.com = Always allowed on Muid's PC. Owner to restore YouTube to Streaming.
+- Proposed fix (awaiting owner review, not built): changed-items-only saves with three-way merge on the PC, pinned base revision, protected-rule confirmation + PC-side loosen check, rule-change history and alerts, Windows SetAuditMode keeps website limits.
+
 ## 2026-11-26 checkpoint [claude] — UI review H3/H4/W1 fixed in PR #114
 
 - PR #114 (branch `claude/project-thread-6lm03w`): Chat & social tab in Apps & websites; Time limits lists what counts toward each plan; one category vocabulary (Games, Streaming, Chat & social) across Apps, Usage, native popup and new-family defaults; parent mode text fixed. Tests 347/347; WebReviewBrowser 73/73 in Chromium. C# build and native UI tests not run (needs ManarProjects Windows run). Not deployed.
 - W1 finding: unlocking settings does **not** pause counting; only parent mode does (FamilyTime.cs:354). The #101 pilot script was wrong on this; corrected copy in PR #114 (`docs/PILOT_101_CHAT_TEST.md`) and project files `tstop-release/PILOT_101_CHAT_TEST.md`. OneDrive release copy not updated (folder not granted to this session).
 - 2026-11-26 21:52 PKT: #114 merged by owner (main now includes it). Not deployed: web publish and a Windows candidate build are needed before the family sees it.
 - Owner: rename the live "Chatting Apps" plan to "Chat & social" (existing family names are not changed by code); confirm label choice (answers open action 5, chat label).
-=======
+
 ## 2026-11-26 21:55 PKT checkpoint [claude] — Windows 0.1.10 IS published (correction)
 
 - Correction to the 14:35 checkpoint: Windows 0.1.10 was published to the pilot channel at 15:02 PKT by a Claude session. Request commit 3233607 on ManarProjects/tstop-testing → windows-pilot.yml run 45797634820 (publish=true): installer hashes, embedded files and live dashboard verified; publish and signed-channel readback succeeded. Source 0243d62, candidate run 45782329074.
@@ -22,7 +28,6 @@ Last updated: 2026-11-26 [claude]
 1. Owner: confirm 0.1.10 installed on each PC (dashboard Settings → version) and run the pilot chat test the day after install.
 2. Owner: submit extension 0.5.5 to Chrome and Edge stores (packages: run 45782329074 artifacts).
 3. Owner: live rules export + functions list; then deploy functions for #112 and rules for #105.
->>>>>>> origin/main
 
 ## 2026-11-26 14:35 PKT checkpoint [claude] — merged, web published, Windows 0.1.10 candidate verified
 
