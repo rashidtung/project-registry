@@ -2,6 +2,14 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — second batch built on PR #121, not published
+
+- Owner instruction (28 Nov): no piecemeal publishing; one release for the remaining work, then a numbered test list.
+- Built and unit-tested on `claude/project-thread-p1crg4` (head 4dbb10f): complete uninstall with parent password (Windows runner passed at ecbef12); family switcher; Family page (tiles, filters, collapsible children, rename/move, remove computer); Today loosening alert with Put back and rules summary; Apps & websites three-way switch with per-row saving; Time limits per-day auto-save and allowed-hours bar.
+- Remove computer depends on the `revokeDevice` function being deployed (owner's Google Cloud functions deploy, still outstanding).
+- Not built: Settings and pop-up restyle, installer/pairing screens and add-in guide, tamper alerts, child read-only view, cloud-held rules and offline saves, unpair on uninstall.
+- Windows runner pass for 4dbb10f pending.
+
 ## 2026-11-28 checkpoint [claude] — safety fix published: Windows 0.1.15, web UI 20261128.01
 
 - Owner chose (decision card) to publish the tested safety core now and build the rest after.
