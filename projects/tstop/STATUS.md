@@ -2,6 +2,14 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — web fixes published: web UI 20261128.04 and 20261128.05
+
+- Sign-in failure (owner report, 15:02 PKT): web UI 20261128.03 failed at page start in the Today rules summary, so the dashboard never loaded. Fixed in tstop 728b010, published as 20261128.04 (owner approved on a card; run 46133428137, third attempt). A start-up test now covers a page with no computer selected.
+- Apps & websites on the web (owner report, 15:16 PKT): the web page still had the rule dropdown and Save changes; the three-way switch had only been built in the Windows app's page. Built for the web in tstop 7a97939 and published as 20261128.05 (owner approved on a card; Windows verify run 46134853727, web run 46135423826). Checked live at 15:31 PKT.
+- Windows stays on 0.1.17. Muid's Study Desktop is reporting again and is on 0.1.17.
+- Still not built on the web Apps & websites page: summary tiles and the date in "Applied on PC".
+- Owner: test a rule change on a row (not clicked live by Claude, to avoid changing real rules); continue the test list; merge #121.
+
 ## 2026-11-28 checkpoint [claude] — published: Windows 0.1.17, web UI 20261128.03
 
 - Owner asked for the complete remaining set in one release (28 Nov, 11:05 PKT) and chose "Publish 0.1.17 now" on a decision card (12:23 PKT).
