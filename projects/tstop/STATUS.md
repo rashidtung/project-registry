@@ -2,6 +2,14 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — safety fix published: Windows 0.1.15, web UI 20261128.01
+
+- Owner chose (decision card) to publish the tested safety core now and build the rest after.
+- Source: rashidtung/tstop 68919ba on `claude/project-thread-p1crg4` (draft PR #121, not merged). Windows verification run 46099466916 passed; web publish run 46099920460 passed with live read-back; Windows publish run 46100297354 passed with signed-channel read-back (all on ManarProjects/tstop-testing).
+- Contents: dashboard save sends only the parent's own edits; one-click confirmation before any loosening; PC refuses unconfirmed loosening; Recent changes strip with Undo; app limits off/on restores website limits; installer no longer overwrites another program's forced add-in slot; flat icon.
+- Publication is not installation: the family PCs update automatically; installed version on each PC not yet confirmed.
+- Open: owner to restore Muid's youtube.com to Streaming and merge PR #121. Remaining change-list items still to build.
+
 ## 2026-11-28 checkpoint [claude] — rule-safety release build started (draft PR #121)
 
 - Owner decision: ONE release with every item in the agreed change list (project files `youtube-rule-investigation-2026-11-28/Rule-safety-change-list.md`); his sons test at home. New flat icon (option A) goes in the same release.

@@ -34,7 +34,7 @@ Master list of all projects. Rules: [AGENTS.md](AGENTS.md). Paths are relative t
 
 | ID | Project | Type | Status | Next action | Files location | Context | Last updated |
 |---|---|---|---|---|---|---|---|
-| tstop | Tstop | Software | Active | 28 Nov: rule-safety release in build (draft PR #121, one release with all agreed changes + new icon); nothing published yet. Owner: restore Muid's YouTube to Streaming. Releases 0.1.11–0.1.14 published 27 Nov. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-28 [claude] |
+| tstop | Tstop | Software | Active | 28 Nov: safety fix published (Windows 0.1.15, web UI 20261128.01) from PR #121 (unmerged). Owner: restore Muid's YouTube to Streaming, confirm 0.1.15 on both PCs, merge #121. Remaining rule-safety items in build. Releases 0.1.11–0.1.14 published 27 Nov. | Code: GitHub `rashidtung/tstop`; review outputs: `Documents/Codex/Tstop` | repo | 2026-11-28 [claude] |
 | tung-taleem-portal | Tung Taleem Portal | Software | Active | TBD | `Tung Taleem Portal` | OneDrive pack (AGENTS, README) | 2026-11-26 |
 | tung-time | Tung Time | Software | Active | TBD | `Tung Time Final Package` | repo | 2026-11-26 |
 | manar | MANAR Projects | Consulting | Active | TBD | `SPL Office Work/MANAR Projects` | OneDrive pack (AGENTS, PROJECT_CONTEXT) — variants to reconcile; conflict copies merged 2026-11-26, held in _conflict_copies_2026-11-26 | 2026-11-26 [claude] |
