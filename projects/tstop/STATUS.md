@@ -2,6 +2,17 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — published: Windows 0.1.17, web UI 20261128.03
+
+- Owner asked for the complete remaining set in one release (28 Nov, 11:05 PKT) and chose "Publish 0.1.17 now" on a decision card (12:23 PKT).
+- Published from rashidtung/tstop 9f7b18b (PR #121, unmerged): Windows verify run 46116232408, web run 46121026616, Windows publication run 46121395689 on ManarProjects/tstop-testing.
+- Contents: rule changes wait up to 30 days for a PC that is off; tamper alerts on Today (Tstop stopped, clock moved, unprotected browser, administrator notice); child's read-only "My rules" with Ask parent; Settings tiles and Protection card; web pop-ups in one card style; uninstall reports to the dashboard.
+- Owner deployed the `revokeDevice` cloud function on 28 Nov 11:20 PKT (Remove computer now works). Firebase project ID stays `tung-time-parent-control-34544`.
+- Test list (31 numbered tests): https://claude.ai/artifact/RGbDQ3e9zRckTEUWkfHmnn
+- Not built: installer/pairing redesign and add-in guide, PC pop-up window redesign, extension limit screen, automatic restore of differing rules, child notice, email, Settings switches, week-grid Time limits.
+- Open: Muid's Study Desktop has not reported since 28 Nov 02:54 PKT and is on 0.1.14; owner to check internet and the Tstop service on that PC.
+- Owner: run the test list with the boys; merge #121.
+
 ## 2026-11-28 checkpoint [claude] — published: Windows 0.1.16, web UI 20261128.02
 
 - Owner chose "Release today's build, rest next" on a decision card (28 Nov, 08:50 PKT).
