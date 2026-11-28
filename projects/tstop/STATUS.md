@@ -2,6 +2,15 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — published: Windows 0.1.16, web UI 20261128.02
+
+- Owner chose "Release today's build, rest next" on a decision card (28 Nov, 08:50 PKT).
+- Published from rashidtung/tstop 2b3b707 (PR #121, unmerged): web run 46107038694, Windows verify run 46106462277, publication run 46107519135 on ManarProjects/tstop-testing.
+- Contents: complete uninstall with parent password; family switcher and Family page (rename, move, remove computer); Today loosening alert with Put back and rules summary; Apps & websites three-way switch with per-row saving; Time limits per-day auto-save on the web dashboard and hours bar.
+- Test list for the owner (20 numbered tests): https://claude.ai/artifact/RGbDQ3e9zRckTEUWkfHmnn
+- Next release (one batch): cloud-held rules and offline saves, tamper alerts, installer/pairing screens and add-in guide, child read-only view, Settings and pop-up restyle, unpair on uninstall.
+- Owner: run the test list with the boys; deploy cloud functions (enables Remove computer); merge #121.
+
 ## 2026-11-28 checkpoint [claude] — second batch built on PR #121, not published
 
 - Owner instruction (28 Nov): no piecemeal publishing; one release for the remaining work, then a numbered test list.
