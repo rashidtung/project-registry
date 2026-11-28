@@ -2,6 +2,15 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — mockup audit; web UI 20261128.07 built, not published
+
+- Owner (15:36 PKT): the live dashboard does not look like the agreed mockups. Cause: releases were judged on test counts; several items were reported as built when only the behaviour existed.
+- Audit done screen by screen against the approved mockups: project files `mockup-audit-2026-11-28/` (Gap-list.md and side-by-side pictures).
+- Built on tstop 742ed73 (PR #121, Windows verify run 46137807137 passed), web UI 20261128.07, not published: Time limits week grid with Edit rows, plan tabs, tiles, "What counts" card; Recent changes with Undo on Apps & websites and Time limits; Apps tiles and tab counts; Today rules tiles; Settings switches and Alerts card; Family column headings.
+- The Windows app shows the same pages, so it matches only after a new Windows release (live is 0.1.17).
+- Not yet matching: status dates, day stepper and Every/This week choice, inline more-time confirmation, Today PC and Protected tiles, Family rules column, top bar, all PC pop-ups, installer screens, add-in pop-ups (need a store release).
+- Open with owner: decision card "publish these screens now or wait for the rest" (Claude recommended waiting); whether to drop the arrows and page title from the top bar.
+
 ## 2026-11-28 checkpoint [claude] — web fixes published: web UI 20261128.04 and 20261128.05
 
 - Sign-in failure (owner report, 15:02 PKT): web UI 20261128.03 failed at page start in the Today rules summary, so the dashboard never loaded. Fixed in tstop 728b010, published as 20261128.04 (owner approved on a card; run 46133428137, third attempt). A start-up test now covers a page with no computer selected.
