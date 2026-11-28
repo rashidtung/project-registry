@@ -9,6 +9,8 @@ Last updated: 2026-11-28 [claude]
 - Live now: youtube.com = Always allowed on Muid's PC. Owner to restore YouTube to Streaming.
 - Proposed fix (awaiting owner review, not built): changed-items-only saves with three-way merge on the PC, pinned base revision, protected-rule confirmation + PC-side loosen check, rule-change history and alerts, Windows SetAuditMode keeps website limits.
 
+- 28 Nov 06:45 PKT owner decisions: cloud-held rules agreed, must also work with no dashboard (PC-only); no forced standard account, detect-and-inform approach; email alerts deferred (kept as recommendation); one combined rollout after 30 Nov on rashidtung Actions. Running list: project files youtube-rule-investigation-2026-11-28/Rule-safety-change-list.md. Owner will add more comments before build.
+
 ## 2026-11-26 checkpoint [claude] — UI review H3/H4/W1 fixed in PR #114
 
 - PR #114 (branch `claude/project-thread-6lm03w`): Chat & social tab in Apps & websites; Time limits lists what counts toward each plan; one category vocabulary (Games, Streaming, Chat & social) across Apps, Usage, native popup and new-family defaults; parent mode text fixed. Tests 347/347; WebReviewBrowser 73/73 in Chromium. C# build and native UI tests not run (needs ManarProjects Windows run). Not deployed.
