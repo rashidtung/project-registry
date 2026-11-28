@@ -1,6 +1,5 @@
 # tstop — Tstop
 
-<<<<<<< HEAD
 Last updated: 2026-11-28 [claude]
 
 ## 2026-11-28 checkpoint [claude] — component catalogue and publish gate; web UI 20261128.11 built, awaiting publish decision
@@ -89,9 +88,6 @@ Last updated: 2026-11-28 [claude]
 - Proposed fix (awaiting owner review, not built): changed-items-only saves with three-way merge on the PC, pinned base revision, protected-rule confirmation + PC-side loosen check, rule-change history and alerts, Windows SetAuditMode keeps website limits.
 
 - 28 Nov 06:45 PKT owner decisions: cloud-held rules agreed, must also work with no dashboard (PC-only); no forced standard account, detect-and-inform approach; email alerts deferred (kept as recommendation); one combined rollout after 30 Nov on rashidtung Actions. Running list: project files youtube-rule-investigation-2026-11-28/Rule-safety-change-list.md. Owner will add more comments before build.
-=======
-Last updated: 2026-11-27 22:30 PKT [claude]
-
 ## 2026-11-27 22:30 PKT checkpoint [claude] — 0.1.14 released: Today style on every tab
 
 - Owner approved the mocks ("lets begin"). Children (Muid, Bazil) can open today/past days in the week grid for their minutes; used time reads "1h 35m / 2h" with an orange dot when the limit was reached. Apps & websites, Time limits and Settings use the compact Today style on wide screens (Save in the title bar, hover outline, today's schedule row outlined, past days greyed in "Adjust this week", Settings as one card).
@@ -151,7 +147,6 @@ Done and shipped (for reference): #114 chat fixes (H3/H4/W1) and the soojha-thre
 1. Owner: confirm each pilot PC shows 0.1.11 (Settings → version) after the automatic update; check the new dashboard on web and Windows, light and dark.
 2. Claude: mock option A (used-time fill in the week bar) for owner review.
 3. ManarProjects trial ends 2026-11-30 19:00 UTC; plan any further Windows release before then.
->>>>>>> origin/main
 
 ## 2026-11-26 checkpoint [claude] — UI review H3/H4/W1 fixed in PR #114
 
@@ -159,10 +154,7 @@ Done and shipped (for reference): #114 chat fixes (H3/H4/W1) and the soojha-thre
 - W1 finding: unlocking settings does **not** pause counting; only parent mode does (FamilyTime.cs:354). The #101 pilot script was wrong on this; corrected copy in PR #114 (`docs/PILOT_101_CHAT_TEST.md`) and project files `tstop-release/PILOT_101_CHAT_TEST.md`. OneDrive release copy not updated (folder not granted to this session).
 - 2026-11-26 21:52 PKT: #114 merged by owner (main now includes it). Not deployed: web publish and a Windows candidate build are needed before the family sees it.
 - Owner: rename the live "Chatting Apps" plan to "Chat & social" (existing family names are not changed by code); confirm label choice (answers open action 5, chat label).
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/main
 ## 2026-11-26 21:55 PKT checkpoint [claude] — Windows 0.1.10 IS published (correction)
 
 - Correction to the 14:35 checkpoint: Windows 0.1.10 was published to the pilot channel at 15:02 PKT by a Claude session. Request commit 3233607 on ManarProjects/tstop-testing → windows-pilot.yml run 45797634820 (publish=true): installer hashes, embedded files and live dashboard verified; publish and signed-channel readback succeeded. Source 0243d62, candidate run 45782329074.
