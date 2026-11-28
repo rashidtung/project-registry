@@ -2,6 +2,13 @@
 
 Last updated: 2026-11-28 [claude]
 
+## 2026-11-28 checkpoint [claude] — rule-safety release build started (draft PR #121)
+
+- Owner decision: ONE release with every item in the agreed change list (project files `youtube-rule-investigation-2026-11-28/Rule-safety-change-list.md`); his sons test at home. New flat icon (option A) goes in the same release.
+- Built so far on `claude/project-thread-p1crg4` (rashidtung/tstop draft PR #121): dashboard save sends only the parent's own edits (incident replay test); one-click confirmation before any loosening; Windows service rejects unconfirmed loosening; app limits off/on restores website limits; flat icon in all sizes. Dashboard tests 318/318. Windows verification run on ManarProjects/tstop-testing for f3adf9a pending.
+- Not yet built: per-row saving UI, cloud-held rules and offline saves, family switcher, rename/remove computer, tamper alerts, pop-ups, installer and complete uninstall, add-in guide, child read-only view.
+- Nothing published. Muid's youtube.com is still Always allowed until the owner restores it.
+
 ## 2026-11-28 checkpoint [claude] — Muid's YouTube rule found set to Always allowed
 
 - Firebase commands show the YouTube rule was loosened by two web-dashboard saves from the parent account (27 Nov 18:47 PKT; 28 Nov 01:11 PKT). The installer and updater changed nothing. The 01:11 save was a stale dashboard draft (18:47 state + 4 new games) that silently reverted a 19:57 restore.
