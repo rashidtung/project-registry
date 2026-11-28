@@ -2,7 +2,14 @@
 
 Last updated: 2026-11-28 [claude]
 
-## 2026-11-28 checkpoint [claude] — mockup audit; web UI 20261128.10 built, not published
+## 2026-11-28 checkpoint [claude] — web UI 20261128.10 published
+
+- Owner chose "Publish web UI 20261128.10" on a decision card (17:19 PKT). Published from tstop 646d711 (PR #121, unmerged): web run 46144111469 on ManarProjects/tstop-testing. Checked live at 17:27 PKT: Family and Time limits show the new layout with real data.
+- Windows stays on 0.1.17; the Windows app, PC pop-ups and installer still need a Windows release to match the mockups.
+- Known small defect: Time limits tile "Shared time per week" shows "No limit" although each day has a limit.
+- Owner: review the live pages, run the test list, merge #121.
+
+## 2026-11-28 checkpoint [claude] — mockup audit; web UI 20261128.10 built (history)
 
 - Owner (15:36 PKT): the live dashboard does not look like the agreed mockups. Cause: releases were judged on test counts; several items were reported as built when only the behaviour existed.
 - Audit done screen by screen against the approved mockups: project files `mockup-audit-2026-11-28/` (Gap-list.md and side-by-side pictures).
@@ -11,7 +18,6 @@ Last updated: 2026-11-28 [claude]
 - Built on tstop 742ed73 (PR #121, Windows verify run 46137807137 passed), web UI 20261128.07, not published: Time limits week grid with Edit rows, plan tabs, tiles, "What counts" card; Recent changes with Undo on Apps & websites and Time limits; Apps tiles and tab counts; Today rules tiles; Settings switches and Alerts card; Family column headings.
 - The Windows app shows the same pages, so it matches only after a new Windows release (live is 0.1.17).
 - Not yet matching: "Applied on PC" dates (the PC does not report them), inline more-time confirmation (a pop-up is used), switcher position in the top bar, all PC pop-ups, installer screens, add-in pop-ups (need a store release).
-- Open with owner: decision card to publish web UI 20261128.10.
 
 ## 2026-11-28 checkpoint [claude] — web fixes published: web UI 20261128.04 and 20261128.05
 
